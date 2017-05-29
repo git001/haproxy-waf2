@@ -1,0 +1,12 @@
+sudo: required
+
+language: c
+
+services:
+  - docker
+
+before_install:
+  - docker build -t me2digital/haproxy-waf2 .
+
+script:
+  - docker run --entrypoint /usr/local/sbin/haproxy --rm me2digital/haproxy-waf2 -vv
