@@ -88,3 +88,13 @@ using CONFIG_FILE   :/tmp/haproxy.conf
 
 TODO
 
+## Run output
+
+```
+docker run --rm -it --entrypoint /bin/bash me2digital/haproxy-waf2
+[root@66c23d39fbd2 /]# /usr/local/bin/defender -f /data/naxsi_core.rules
+1496069557.347029 [00] Defender active on server 66c23d39fbd2: 42 MainRules loaded
+1496069557.347100 [00] Defender scanner disabled for loc /
+1496069562.353190 [01] 0 clients connected
+1496069562.353303 [10] 0 clients connected
+```
