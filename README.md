@@ -7,7 +7,11 @@ The main work is based on Dragan Dosen patches and of course the SPOE feature of
 You can see the start and following discussion on the haproxy mailing list.
 https://www.mail-archive.com/haproxy@formilux.org/msg26229.html
 
-You are able with this patches to use haproxy as SSL terminator and WAF (Web Application Firewall) based on mod_defender.
+You are able with this patches to use haproxy as SSL terminator and WAF (Web Application Firewall) based on [mod_defender](https://github.com/VultureProject/mod_defender).
+
+This blog post desribe another possible solution with naxsi and haproxy
+
+https://www.haproxy.com/blog/high-performance-waf-platform-with-naxsi-and-haproxy/
 
 ## requirements
 
